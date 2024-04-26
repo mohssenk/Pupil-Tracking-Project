@@ -29,6 +29,7 @@ if __name__ == "__main__":
     base_path = os.getcwd()
     parent_path = os.path.dirname(base_path)
 
+    # Runs all the videos defaultly placed in /data
     for idx in [1, 2, 3, 4, 5, 6]:
         video_input_path = os.path.join(parent_path, 'data', f'eye{idx}.mp4')
         video_output_path = os.path.join(parent_path, 'results', f'eye{idx}.avi') 
