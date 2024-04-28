@@ -15,7 +15,7 @@ class EyePlotter:
                 cv2.circle(frame, (x, y), radius, self.circle_color, 2) 
         return frame
 
-    def plot_pupil_size(self, sizes, fps, index, output_dir):
+    def plot_pupil_size(self, sizes, fps, output_dir, index=''):
         times = [i / fps for i in range(len(sizes))]
         plt.figure(figsize=(10, 5))
         plt.plot(times, sizes, label='Pupil Size', color='blue')
@@ -25,5 +25,7 @@ class EyePlotter:
         plt.legend()
         plt.grid(True)
         plt.ylim(bottom=0)
-        file_path = os.path.join(output_dir, f'pupil_size_over_time_{index}.png')
+        if index == '':
+            file_path = os.path.join(output_dir, 'pupil_size_over_time_new_example.png')
+        else: file_path = os.path.join(output_dir, f'pupil_size_over_time_{index}.png')
         plt.savefig(file_path)

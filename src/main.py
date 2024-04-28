@@ -21,7 +21,8 @@ def main(video_input_path, video_output_path, video_index):
         media_manager.store_frame(frame) 
 
     pupil_sizes, frame_rate = pupil_detector.pupil_sizes, media_manager.frame_rate
-    eye_plotter.plot_pupil_size(pupil_sizes, frame_rate, video_index, video_output_path[:-9])
+    eye_plotter.plot_pupil_size(pupil_sizes, frame_rate, os.path.dirname(video_output_path), video_index)
+    
     
     media_manager.cleanup()
 
@@ -32,5 +33,16 @@ if __name__ == "__main__":
     # Runs all the videos defaultly placed in /data
     for idx in [1, 2, 3, 4, 5, 6]:
         video_input_path = os.path.join(parent_path, 'data', f'eye{idx}.mp4')
-        video_output_path = os.path.join(parent_path, 'results', f'eye{idx}.avi') 
+        video_output_path = os.path.join(parent_path, 'results', f'eye{idx}.avi')
         main(video_input_path, video_output_path, idx)
+
+    # Include this if you would like to run on a new file added to /data
+    '''new_file = input("Enter a string name of an mp4 file [DONT NOT INLCUDE .mp4]:\n")
+    video_input_path = os.path.join(parent_path, 'data', f'{new_file}.mp4')
+    if not os.path.exists(video_input_path):
+        print("File does not exist.")
+        exit()  # Exit the program if the file does not exist
+    else: print("File exists.")
+
+    video_output_path = os.path.join(parent_path, 'results', f'{new_file}.avi') 
+    main(video_input_path, video_output_path, '')'''
