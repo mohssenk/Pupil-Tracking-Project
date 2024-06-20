@@ -39,6 +39,7 @@ Processed videos and data visualizations are saved in the `results` directory.
 
 ## Credit
 Credit to the videos belong to the following sources:
+
 https://www.youtube.com/watch?v=-01-XBHXFq8&ab_channel=AJMAKESTHINGS
 
 https://www.youtube.com/watch?v=P7nCvM9qMzE&ab_channel=StockFootage93
