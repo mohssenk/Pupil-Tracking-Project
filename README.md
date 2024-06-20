@@ -38,7 +38,7 @@ Video contains 6 example videos in /data, which are all processed with the proje
 Processed videos and data visualizations are saved in the `results` directory.
 
 ## Credit
-Credit to the videos belong to the following sources:
+Credit to the videos belong to following sources:
 
 https://www.youtube.com/watch?v=-01-XBHXFq8&ab_channel=AJMAKESTHINGS
 
