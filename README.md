@@ -13,7 +13,7 @@ The following is Eye Example 2 in /data
 
 ## Summary
 
-This eye tracker follows the pupil as it moves around. The tracker is designed for videos that stable and that focus on one eye (zoomed in closely) Fundamentally, the model operates by performing a contour analysis and then looking for a well-sized, round contour. It draws a red circle around the pupil to track it.
+This eye tracker follows the pupil as it moves around. The tracker is designed for videos that stable and that focus on one eye (zoomed in closely). Fundamentally, the model operates by performing a contour analysis and then looking for a well-sized, round contour. It draws a red circle around the pupil to track it.
 
 It also tracks the size of the pupil over time. This can be used to evaluate the model's performance, as large jumps in size can be indicative of inaccurate tracking.
 
