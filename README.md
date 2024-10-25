@@ -32,7 +32,7 @@ Ensure you have Python installed on your system. Also ensure the installation of
 ## Usage
 Execute the `main.py` script in /src to run.
 
-To run on a new file, upload video file into /data and run new_data.py, then type in the name of the file you wish to run the model on.
+To run on a new file, upload video file into /data and run `new_data.py`, then type in the name of the file you wish to run the model on.
 
 ## Data
 Video contains 6 example videos in /data, which are all processed with the project execution.
