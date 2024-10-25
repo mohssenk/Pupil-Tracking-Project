@@ -11,7 +11,7 @@ The following is Eye Example 1 in /data
 The following is Eye Example 2 in /data
 [![Watch the Video](path/to/video_thumbnail.jpg)](https://www.youtube.com/watch?v=oSwysY2Rwqk)
 
-The followis is Eye Example 3 in /data
+The following is Eye Example 3 in /data
 [![Watch the Video](path/to/video_thumbnail.jpg)](https://youtu.be/-x1F8EvygFo?si=sNbmj8wbKVlp4MoH)
 
 ## Summary
